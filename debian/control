@@ -1,0 +1,13 @@
+Source: mainsail
+Section: python
+Priority: extra
+Maintainer: Dongjin Kim <tobetter@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+X-Python3-Version: >= 3.7
+
+Package: mainsail
+Architecture: any
+Depends: ${misc:Pre-Depends}
+Description: Mainsail for Klipper
+  ...

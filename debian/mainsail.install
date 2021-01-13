@@ -1,0 +1,11 @@
+#!/bin/sh
+
+files=$(find  \( -name . -o \
+		-name .git -prune -o \
+		-name .github -prune -o \
+		-name .gitignore -prune -o \
+		-name debian -prune \) -o -print | sed -e 's/^\.\///')
+
+for f in ${files}; do
+	echo $f	/usr/lib/mainsail/$f
+done
